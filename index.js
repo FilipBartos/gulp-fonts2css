@@ -31,9 +31,7 @@ function getFileInfo (file) {
 module.exports = function (options) {
   var settings = Object.assign( {}, defaults, options );
   var files = []
-  var outputFile = null
   return through.obj(function(file, enc, callback){
-    outputFile = outputFile || file
     files.push(file);
     callback();
   }, function(callback) {
