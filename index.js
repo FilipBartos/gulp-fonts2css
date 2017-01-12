@@ -59,11 +59,11 @@ function getFontTypes (fonts) {
   return fontTypes
 }
 module.exports = function (options) {
-  var settings = Object.assign( {}, defaults, options );
+  var settings = Object.assign( {}, defaults, options )
   var fonts = []
   return through.obj(function(file, enc, callback){
-    fonts.push(file);
-    callback();
+    fonts.push(file)
+    callback()
   }, function(callback) {
     var fontTypes = getFontTypes(fonts)
     fontTypes.forEach((function (fontType) {
