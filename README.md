@@ -13,7 +13,7 @@ Output:
   font-family: "MyFont";
   font-style: italic;
   font-weight: 400;
-  src: url("data:application/x-font-woff;base64,<<<base64 will be here>>>") format("{{fontType}}");
+  src: url("data:application/x-font-woff;base64,<<<base64 will be here>>>") format("woff");
 }
 ```
 
