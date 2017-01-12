@@ -43,11 +43,11 @@ module.exports = function (options) {
     files.forEach(function (file) {
       var fileInfo = getFileInfo(file)
       buffer += template
-        .replace('{{fontName}}', fileInfo.fontName)
-        .replace('{{fontWeight}}', fileInfo.fontWeight)
-        .replace('{{fontType}}', fileInfo.fontType)
-        .replace('{{fontStyle}}', fileInfo.fontStyle.toLowerCase())
-        .replace('{{base64}}', fileInfo.base64)
+        .replace(/{{fontName}}/g, fileInfo.fontName)
+        .replace(/{{fontWeight}}/g, fileInfo.fontWeight)
+        .replace(/{{fontType}}/g, fileInfo.fontType)
+        .replace(/{{fontStyle}}/g, fileInfo.fontStyle.toLowerCase())
+        .replace(/{{base64}}/g, fileInfo.base64)
     })
     vinyl.path = path.resolve(vinyl.base, settings.filename)
     vinyl.contents = new Buffer(buffer)
