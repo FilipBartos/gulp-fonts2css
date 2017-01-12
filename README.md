@@ -13,7 +13,7 @@ Output:
   font-family: "MyFont";
   font-weight: 400;
   font-style: italic;
-  src: url("data:application/x-font-woff;base64,<<<base64 will be here>>>") format("woff");
+  src: url("data:application/font-woff;base64,<<<base64 will be here>>>") format("woff");
 }
 ```
 
@@ -25,7 +25,7 @@ var gulp = require('gulp'),
 gulp.task('fonts2css', function () {
   return gulp.src('./fonts/*.woff')
     .pipe(fonts2css({
-      filename: 'fonts-base64.css' // optional
+      filename: 'myfont' // optional, default = 'fonts', result will be myfont-400.css
     }))
     .pipe(gulp.dest('dist'));
 });
