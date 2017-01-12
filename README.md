@@ -11,8 +11,8 @@ Output:
 
 @font-face {
   font-family: "MyFont";
-  font-style: italic;
   font-weight: 400;
+  font-style: italic;
   src: url("data:application/x-font-woff;base64,<<<base64 will be here>>>") format("woff");
 }
 ```
