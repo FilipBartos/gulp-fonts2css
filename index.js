@@ -20,11 +20,12 @@ function getFileInfo (file) {
   var filename = path.basename(file.relative)
   var extension = path.extname(filename).slice(1, path.extname(filename).length)
   var font = filename.slice(0, filename.length - (extension.length + 1))
+  var props = font.split('-')
   return {
     fontType: extension,
-    fontName: font.split('-')[0],
-    fontWeight: font.split('-')[1],
-    fontStyle: font.split('-')[2] ? font.split('-')[2] : 'normal',
+    fontName: props[0],
+    fontWeight: props[1] || 400,
+    fontStyle: props[2] || 'normal',
     base64: file.contents.toString('base64')
   }
 }
