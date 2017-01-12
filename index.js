@@ -16,7 +16,6 @@ var template = [
 var defaults = {
   filename: 'fonts.css'
 }
-
 function getFileInfo (file) {
   var filename = path.basename(file.relative)
   var extension = path.extname(filename).slice(1, path.extname(filename).length)
