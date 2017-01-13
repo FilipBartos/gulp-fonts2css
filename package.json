@@ -1,10 +1,20 @@
 {
   "name": "gulp-fonts2css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "https://github.com/FilipBartos/gulp-fonts2css",
   "main": "index.js",
   "scripts": {},
-  "author": "Filip Bartos",
+  "author": {
+    "name": "Filip Bartos",
+    "email": "filip@bartos.me",
+    "url": "http://www.bartos.me"
+  },
+  "contributors": [
+    {
+      "name": "Radek Vataha",
+      "url": "http://vataha.eu/"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FilipBartos/gulp-fonts2css.git"
