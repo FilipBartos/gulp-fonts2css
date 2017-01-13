@@ -1,7 +1,7 @@
 # gulp-fonts2css
 ## Intro
 
-Transforms font files into CSS (base64). 
+[gulp-plugin] Generating CSS files with Base64 encoded font data. 
 ```css
 Input: 
 
